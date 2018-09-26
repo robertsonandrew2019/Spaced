@@ -4,7 +4,7 @@ public class Main {
 	// write your code here
         double x1 = 5;
         double x2 = 4;
-        double x3 = 3;
+        double x3 = -3;
         double y1 = 2;
         double y2 = 9;
         double y3 = 2;
@@ -13,9 +13,9 @@ public class Main {
         double z3 = 6;
         //listing values
 
-        double distanceAB = Math.pow((Math.pow((x2-x1),2)+Math.pow((y2-y1),2)+Math.pow((z2-z1),2)),0.5);
-        double distanceBC = Math.pow((Math.pow((x3-x2),2)+Math.pow((y3-y2),2)+Math.pow((z3-z2),2)),0.5);
-        double distanceAC = Math.pow((Math.pow((x3-x1),2)+Math.pow((y3-y1),2)+Math.pow((z3-z1),2)),0.5);
+        double distanceAB = Math.sqrt((Math.pow((x2-x1),2) + Math.pow((y2-y1),2) + Math.pow((z2-z1),2)));
+        double distanceBC = Math.sqrt((Math.pow((x3-x2),2) + Math.pow((y3-y2),2) + Math.pow((z3-z2),2)));
+        double distanceAC = Math.sqrt((Math.pow((x3-x1),2) + Math.pow((y3-y1),2) + Math.pow((z3-z1),2)));
         //evaluating distances
 
         double maxInitial = Math.max(distanceAB,distanceBC);
