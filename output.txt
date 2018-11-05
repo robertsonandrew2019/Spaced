@@ -1,4 +1,6 @@
-/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=59436:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/andrewrobertson/IdeaProjects/Spaced/out/production/untitled104 Main
-The shortest distance between two drones is 9.9498743710662
-The greatest distance between two drones is 13.601470508735444
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=55200:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/andrewrobertson/IdeaProjects/Spaced/out/production/untitled104 Main
 
+The greatest distance between two drones is 13.601471
+The shortest distance between two drones is 9.949874
+
+Process finished with exit code 0
