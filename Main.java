@@ -1,33 +1,28 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        double x1 = 5;
-        double x2 = 4;
-        double x3 = -3;
-        double y1 = 2;
-        double y2 = 9;
-        double y3 = 2;
-        double z1 = -5;
-        double z2 = 2;
-        double z3 = 6;
-        //listing values
+        // write your code here
+        double AB = distanceCalc(5, 4, 2, 9, -5, 2);
+        double BC = distanceCalc(4, -3, 9, 2, 2, 6);
+        double AC = distanceCalc(5, -3, 2, 2,-5, 6 );
+        maxCalculator (AB, BC, AC);
+        minCalculator (AB, BC, AC);
+    }
 
-        double distanceAB = Math.sqrt((Math.pow((x2-x1),2) + Math.pow((y2-y1),2) + Math.pow((z2-z1),2)));
-        double distanceBC = Math.sqrt((Math.pow((x3-x2),2) + Math.pow((y3-y2),2) + Math.pow((z3-z2),2)));
-        double distanceAC = Math.sqrt((Math.pow((x3-x1),2) + Math.pow((y3-y1),2) + Math.pow((z3-z1),2)));
-        //evaluating distances
+    public static double distanceCalc(int x1, int x2, int y1, int y2, int z1, int z2) {
+        return Math.sqrt((Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2) + Math.pow((z2 - z1), 2)));
+    }
 
-        double maxInitial = Math.max(distanceAB,distanceBC);
-        double maxFinal = Math.max(maxInitial, distanceAC);
-        double minInitial = Math.min(distanceAB,distanceBC);
-        double minFinal = Math.min(distanceAC,minInitial);
-        //comparing distances
+    public static void maxCalculator(double AB, double BC, double AC) {
+        double maxInitial = Math.max(AB, BC);
+        double maxFinal = Math.max(maxInitial, AC);
+        System.out.printf("\nThe greatest distance between two drones is %f\n", maxFinal);
+    }
 
-        System.out.println("The shortest distance between two drones is " + minFinal);
-        System.out.println("The greatest distance between two drones is " + maxFinal);
-        //outputting solution
+    public static void minCalculator(double AB, double BC, double AC) {
+        double minInitial = Math.min(AB, BC);
+        double minFinal = Math.min(AC, minInitial);
+        System.out.printf("The shortest distance between two drones is %f\n", minFinal);
     }
 
 }
-
